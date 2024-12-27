@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form with Validation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<h2>User Form</h2>
+
+<form id="userForm">
+  <label for ="username" > User Name</label>
+  <input type="text" id="uname" name="username" placeholder="Enter your name">
+  <div class="error" id="error1"></div>
+
+  <label for ="gmail" > G-Mail</label>
+  <input type="text" id="mail" name="gmail" placeholder="Enter you gmail id">
+  <div class="error" id="error2"></div>
+
+  <label for ="phone">Phone Number</label>
+  <input type="tel" id="num"name="phone" placeholder="Enter your number">
+  <div class="error" id="error3"></div>
+ <br>
+
+  <button type="button" class="submit" onclick="submitButton()"> Submit</button>
+  <button type="button" class="cancel" onclick="cancelButton()"> Cancel </button>
+
+  
+
+</form>
+
+<h3> Submitted Users</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th> User Name</th>
+      <th>G-mail</th>
+      <th>Phone Number</th>
+    </tr>
+  </thead>
+  <tbody id="userList">
+
+  </tbody>
+</table>
+<script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
